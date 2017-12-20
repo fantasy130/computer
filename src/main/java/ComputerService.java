@@ -1,6 +1,6 @@
 public class ComputerService {
 
-    public int plus(int a,int b) {
+    public float plus(float a, float b) {
         return a + b;
     }
 }

@@ -6,7 +6,7 @@ public class TestComputer {
     @Test
     public void testPlusOneOne_ShoudleReturnTwo() {
         ComputerService computerService = new ComputerService();
-        int result = computerService.plus(1, 1);
-        Assert.assertEquals(result, 2);
+        float result = computerService.plus(1, 1);
+        Assert.assertEquals(result, 2.0, 0);
     }
 }
