@@ -25,4 +25,11 @@ public class TestComputer {
         float result = computerService.minus(1, 1);
         Assert.assertEquals(result, 0.0, 0);
     }
+
+    @Test
+    public void testMinusOneMinusOne_ShouldReturnTwo() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.minus(1, -1);
+        Assert.assertEquals(result, 2.0, 0);
+    }
 }
