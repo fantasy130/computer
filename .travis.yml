@@ -1,4 +1,17 @@
 language: java
+sudo: false
+install: true
+addons:
+  sonarcloud:
+    organization: "fantasy130-github"
+    token:
+      secure: "4f025371648940823f73085bbd04153853f20049"
 
 jdk:
   - oraclejdk8
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
