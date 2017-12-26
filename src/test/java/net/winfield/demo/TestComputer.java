@@ -60,4 +60,32 @@ public class TestComputer {
         float result = computerService.devide(6, -3);
         Assert.assertEquals(result, -2.0, 0);
     }
+
+    @Test
+    public void testModOneOne_ShouldReturnZero() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.mod(1, 1);
+        Assert.assertEquals(result, 0.0, 0);
+    }
+
+    @Test
+    public void testModThreeTwo_ShouldReturnOne() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.mod(3, 2);
+        Assert.assertEquals(result, 1.0, 0);
+    }
+
+    @Test
+    public void testModThreeMinusTwo_ShouldReturnOne() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.mod(3, -2);
+        Assert.assertEquals(result, 1.0, 0);
+    }
+
+    @Test
+    public void testModFourTwo_ShouldReturnZero() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.mod(4, 2);
+        Assert.assertEquals(result, 0.0, 0);
+    }
 }
