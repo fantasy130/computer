@@ -13,4 +13,8 @@ public class ComputerService {
     public float multiple(float a, float b) {
         return a * b;
     }
+
+    public float devide(float a, float b) {
+        return a / b;
+    }
 }
