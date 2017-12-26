@@ -18,9 +18,8 @@ public class ComputerService {
 
     public String devide(float a, float b) {
         float floatResult = a / b;
-        BigDecimal bd = new BigDecimal(new Float(floatResult).toString());
-        String result = bd.setScale(1, BigDecimal.ROUND_HALF_UP).toString();
-        return result;
+        BigDecimal bd = new BigDecimal(Float.toString(floatResult));
+        return bd.setScale(1, BigDecimal.ROUND_HALF_UP).toString();
     }
 
     public String mod(float a, float b) {
