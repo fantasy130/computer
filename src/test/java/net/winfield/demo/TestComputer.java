@@ -32,4 +32,18 @@ public class TestComputer {
         float result = computerService.minus(1, -1);
         Assert.assertEquals(result, 2.0, 0);
     }
+
+    @Test
+    public void testMultiTwoThree_ShouldReturnSix() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.multiple(2, 3);
+        Assert.assertEquals(result, 6.0, 0);
+    }
+
+    @Test
+    public void testMultiTwoMinusThree_ShouldReturnMinusSix() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.multiple(2, -3);
+        Assert.assertEquals(result, -6.0, 0);
+    }
 }
