@@ -88,4 +88,18 @@ public class TestComputer {
         float result = computerService.mod(4, 2);
         Assert.assertEquals(result, 0.0, 0);
     }
+
+    @Test
+    public void testSquareTwo_ShouldReturnFour() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.square(2);
+        Assert.assertEquals(result, 4.0, 0);
+    }
+
+    @Test
+    public void testSquareMinusTwo_ShouldReturnFour() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.square(-2);
+        Assert.assertEquals(result, 4.0, 0);
+    }
 }

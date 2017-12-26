@@ -21,4 +21,8 @@ public class ComputerService {
     public float mod(float a, float b) {
         return a % b;
     }
+
+    public float square(float a) {
+        return a * a;
+    }
 }
