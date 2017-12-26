@@ -46,4 +46,18 @@ public class TestComputer {
         float result = computerService.multiple(2, -3);
         Assert.assertEquals(result, -6.0, 0);
     }
+
+    @Test
+    public void testDevideSixThree_ShouldReturnTwo() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.devide(6, 3);
+        Assert.assertEquals(result, 2.0, 0);
+    }
+
+    @Test
+    public void testDevideSixMinusThree_ShouldReturnMinusTwo() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.devide(6, -3);
+        Assert.assertEquals(result, -2.0, 0);
+    }
 }
