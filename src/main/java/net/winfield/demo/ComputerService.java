@@ -33,4 +33,8 @@ public class ComputerService {
     public String cublic(float a) {
         return String.valueOf(a * a * a);
     }
+
+    public String power(float a, int b) {
+        return String.valueOf(Math.pow(a, b));
+    }
 }

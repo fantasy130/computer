@@ -137,4 +137,19 @@ public class TestComputer {
         String result = computerService.cublic(-2);
         Assert.assertEquals(result, "-8.0");
     }
+
+
+    @Test
+    public void testPowerTwoThree_ShouldReturnEight() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.power(2, 3);
+        Assert.assertEquals(result, "8.0");
+    }
+
+    @Test
+    public void testPowerMinusTwoThree_ShouldReturnEight() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.power(-2, 3);
+        Assert.assertEquals(result, "-8.0");
+    }
 }
