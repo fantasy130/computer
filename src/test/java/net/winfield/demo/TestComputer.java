@@ -34,6 +34,13 @@ public class TestComputer {
     }
 
     @Test
+    public void testMinusOneMinusTwo_ShouldReturnMinusOne() {
+        ComputerService computerService = new ComputerService();
+        float result = computerService.minus(1, 2);
+        Assert.assertEquals(result, -1.0, 0);
+    }
+
+    @Test
     public void testMultiTwoThree_ShouldReturnSix() {
         ComputerService computerService = new ComputerService();
         float result = computerService.multiple(2, 3);
@@ -50,15 +57,29 @@ public class TestComputer {
     @Test
     public void testDevideSixThree_ShouldReturnTwo() {
         ComputerService computerService = new ComputerService();
-        float result = computerService.devide(6, 3);
-        Assert.assertEquals(result, 2.0, 0);
+        String result = computerService.devide(6, 3);
+        Assert.assertEquals(result, "2.0");
     }
 
     @Test
     public void testDevideSixMinusThree_ShouldReturnMinusTwo() {
         ComputerService computerService = new ComputerService();
-        float result = computerService.devide(6, -3);
-        Assert.assertEquals(result, -2.0, 0);
+        String result = computerService.devide(6, -3);
+        Assert.assertEquals(result, "-2.0");
+    }
+
+    @Test
+    public void testDevideSixFour_ShouldReturnOnePointFive() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.devide(6, 4);
+        Assert.assertEquals(result, "1.5");
+    }
+
+    @Test
+    public void testDevideFiveThree_ShouldReturnOnePointSeven() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.devide(5, 3);
+        Assert.assertEquals(result, "1.7");
     }
 
     @Test
