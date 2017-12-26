@@ -123,4 +123,18 @@ public class TestComputer {
         String result = computerService.square(-2);
         Assert.assertEquals(result, "4.0");
     }
+
+    @Test
+    public void testCublicTwo_ShouldReturnEight() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.cublic(2);
+        Assert.assertEquals(result, "8.0");
+    }
+
+    @Test
+    public void testCublicMinusTwo_ShouldReturnMinusEight() {
+        ComputerService computerService = new ComputerService();
+        String result = computerService.cublic(-2);
+        Assert.assertEquals(result, "-8.0");
+    }
 }

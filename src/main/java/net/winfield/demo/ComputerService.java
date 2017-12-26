@@ -29,4 +29,8 @@ public class ComputerService {
     public String square(float a) {
         return String.valueOf(a * a);
     }
+
+    public String cublic(float a) {
+        return String.valueOf(a * a * a);
+    }
 }
