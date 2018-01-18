@@ -62,30 +62,30 @@ public class TestComputer {
     }
 
     @Test
-    public void testDevideSixThree_ShouldReturnTwo() {
+    public void testDivideSixThree_ShouldReturnTwo() {
         ComputerService computerService = new ComputerService(logger);
-        String result = computerService.devide(6, 3);
+        String result = computerService.divide(6, 3);
         Assert.assertEquals(result, "2.0");
     }
 
     @Test
-    public void testDevideSixMinusThree_ShouldReturnMinusTwo() {
+    public void testDivideSixMinusThree_ShouldReturnMinusTwo() {
         ComputerService computerService = new ComputerService(logger);
-        String result = computerService.devide(6, -3);
+        String result = computerService.divide(6, -3);
         Assert.assertEquals(result, "-2.0");
     }
 
     @Test
     public void testDevideSixFour_ShouldReturnOnePointFive() {
         ComputerService computerService = new ComputerService(logger);
-        String result = computerService.devide(6, 4);
+        String result = computerService.divide(6, 4);
         Assert.assertEquals(result, "1.5");
     }
 
     @Test
     public void testDevideFiveThree_ShouldReturnOnePointSeven() {
         ComputerService computerService = new ComputerService(logger);
-        String result = computerService.devide(5, 3);
+        String result = computerService.divide(5, 3);
         Assert.assertEquals(result, "1.7");
     }
 
@@ -161,11 +161,11 @@ public class TestComputer {
     }
 
     @Test
-    public void computer_devideZero_writeErrorLog() throws Exception {
+    public void computer_divideZero_writeErrorLog() throws Exception {
         Logger logger = mock(Logger.class);
         ComputerService computerService = new ComputerService(logger);
         try {
-            computerService.devide(6, 0);
+            computerService.divide(6, 0);
         }
         catch (IllegalArgumentException e) {
 
@@ -182,9 +182,9 @@ public class TestComputer {
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void computer_devideZero_throwException() throws Exception {
+    public void computer_divideZero_throwException() throws Exception {
         Logger logger = mock(Logger.class);
         ComputerService computerService = new ComputerService(logger);
-        computerService.devide(6, 0);
+        computerService.divide(6, 0);
     }
 }

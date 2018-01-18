@@ -23,7 +23,7 @@ public class ComputerService {
         return String.valueOf(a * b);
     }
 
-    public String devide(float a, float b) throws IllegalArgumentException {
+    public String divide(float a, float b) throws IllegalArgumentException {
         if(b == 0) {
             logger.error("The 2nd parameter can not be zero.");
             throw new IllegalArgumentException("The 2nd parameter can not be zero.");
