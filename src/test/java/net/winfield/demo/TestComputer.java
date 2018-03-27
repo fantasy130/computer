@@ -178,7 +178,7 @@ public class TestComputer {
         Logger logger = mock(Logger.class);
         ComputerService computerService = new ComputerService(logger);
         String result = computerService.plus(1, 1);
-        Assert.assertEquals(result, "2.1");
+        Assert.assertEquals(result, "2.0");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
