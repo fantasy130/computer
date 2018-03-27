@@ -159,7 +159,6 @@ public class TestComputer {
         String result = computerService.power(-2, 3);
         Assert.assertEquals(result, "-8.0");
     }
-    }
     @Test
     public void computer_divideZero_writeErrorLog() throws Exception {
         Logger logger = mock(Logger.class);
