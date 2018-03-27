@@ -186,5 +186,11 @@ public class TestComputer {
         Logger logger = mock(Logger.class);
         ComputerService computerService = new ComputerService(logger);
         computerService.divide(6, 0);
+
+
+
+
+
+
     }
 }
